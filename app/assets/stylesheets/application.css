@@ -11,3 +11,160 @@
  *= require_self
  *= require_tree .
  */
+body{
+
+font-family: 'Corbel'!important;
+font-style: normal !important;
+font-variant: normal !important;
+font-weight: normal !important;
+
+}
+#banner {
+background: #ffffff;
+border-bottom: 20px solid #007042;
+clear: both;
+height: 130px !important;
+padding: 10px 0 0 60px;}
+
+.logo{
+	background: url(logo.png) no-repeat;
+	width: 85px;
+	height: 84px;
+	border:none;
+}
+p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, ul, ol, li, dl {
+clear: none;
+margin-bottom: 1.714286em;}
+
+a:link, a:visited {
+color: #2a8a15;
+font-weight: bold;
+text-decoration: none;}
+
+
+#banner {
+background: #ffffff;
+border-bottom: 20px solid #007042;
+clear: both;
+height: 100px;
+padding: 10px 0 0 60px;}
+
+h1
+{
+	line-height: 1.166667;
+	clear: none;
+	font-family: Corbel !important;
+	font-size: 30px !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal !important;
+}
+
+h2
+{
+	line-height: 1.166667;
+	clear: none;
+	font-family: Corbel !important;
+	font-size: 24px !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal !important;
+}
+
+
+@font-face {
+  font-family: 'Corbel';
+  src: url('../fonts/CORBELZ.TTF');
+  src: url('../fonts/CORBELI.TTF');
+  src: url('../fonts/CORBELB.TTF');
+  src: url('../fonts/CORBEL.TTF') format("truetype");}
+
+  p{
+
+	font-family: Corbel !important;
+	font-size: 14px !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 24px !important;
+	height: 48px !important;
+  }
+ul.basic li {
+padding: 3px 0px 0px 18px;
+background: url(bullet.gif) 5px 0.65em no-repeat;
+width: 464.5px;
+margin-left: -41px;
+}
+
+ol, ul {
+list-style: none;}
+
+
+#exampleInputPassword1{
+background-color: #e1e1e1;
+padding-right: 0px;
+background-attachment: scroll;
+cursor: auto;
+width: 300px;
+background-position: 100% 50%;
+background-repeat: no-repeat no-repeat;}
+#exampleInputEmail1{
+background-color: #e1e1e1;
+padding-right: 0px;
+background-attachment: scroll;
+cursor: auto;
+width: 300px;
+background-position: 100% 50%;}
+
+
+label{
+color: #837870;
+line-height: 24px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+height: 24px;
+font-family: Corbel;
+font-size: 14px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal!important;}
+
+
+
+.btn-default {
+color: #fff !important;
+background-color: #2a8a15!important;
+border-color: #397C02 !important;
+}
+
+.fb_button 
+{
+	background: url(facebook.png)no-repeat;
+	width: 179px;
+	height:30px;
+	margin-top: 0px
+}
+
+.row_two
+{
+	margin-right: 15px
+}
+.row_one{
+margin-right: 17px;
+margin-top: 82px;}
+
+footer {
+min-height: 436px;
+background: url(footer.png)no-repeat;
+color: #fff;
+font-size: 10px !important;
+line-height: 10px !important;
+color:#fff;
+font-weight: normal !important;
+
+}

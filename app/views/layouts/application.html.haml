@@ -1,9 +1,70 @@
 !!!
 %html
-  %head
-    %title Starbucks
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
-  %body
-    = yield
+	%head
+		%title Starbucks
+		= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+		= javascript_include_tag "application", "data-turbolinks-track" => true
+		= csrf_meta_tags
+	%body
+		#banner
+			%a#logo{href: "/login.do"}
+				.logo{alt: "starbucks logo"}
+		.container.sitehold
+	
+			.col-md-12
+				%h1 Sign In or Create a Starbucks Account
+				.col-md-6
+					%h2 I have a Starbucks account.
+					%form{role: "form"}
+						.form-group
+							%label{for: "exampleInputEmail1"} Email address
+							%input#exampleInputEmail1.form-control{placeholder: "Enter email", type: "email"}/
+						.form-group
+							%label{for: "exampleInputPassword1"} Password
+							%input#exampleInputPassword1.form-control{placeholder: "Password", type: "password"}/
+
+						%label
+							Forgot your
+							%a{:href => "forgotpassword"}  Password
+							or
+							%a{:href => "forgotuserid"}  User ID
+
+						.checkbox
+							%label
+								%input{type: "checkbox"}/
+								Remember Me
+						
+						.row_two
+							%a.btn.btn-default.pull-left{:href => "home",type: "login"} Log In
+						.row_one
+							
+							Or log in using Facebook.
+
+							.fb_button 
+			
+				.col-md-6.bordergrey
+					%h2 I need a Starbucks account.
+					%p	
+						With a Starbucks account you can register and manage your Starbucks Cards and participate in
+						%a{href: "/card/rewards"} My Starbucks Rewards
+						
+						%ul.basic
+
+							%li Register any Starbucks or Teavana Card.
+							%li
+								Enjoy a free birthday drink or food reward and a coupon for 15% off
+								= succeed "." do
+									%a{href: "http://www.starbucksstore.com"} StarbucksStore.com
+							%li Protect your balance if your Starbucks Card is missing or stolen.
+							%li Transfer money between cards.
+							%li Track your rewards at My Starbucks Rewards™.
+							%li Automatically reload your Card balance.
+							%li Enter Star codes from specially marked Starbucks® products and earn your way to great rewards.
+
+				.row
+
+					%a{href: "http://www.starbucksstore.com"} Card  .
+					%a{href: "http://www.starbucksstore.com"} My Starbucks Rewards  .
+					View Your Stars
+	%footer
+					 
